@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>D CODE SHOW</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="panel-group">
+        <div class="panel">
+            <div class="panel-heading active">
+                <h4 class="panel-title">
+                    What is JavaScript
+                </h4>
+            </div>
+            <div class="panel-collapse">
+                <div class="panel-body">JavaScript is an object-based scripting language which is lightweight and cross-platform. It makes the web page dynamic. It's a client side scripting language.
+
+                </div>
+            </div>
+        </div>
+        <div class="panel">
+            <div class="panel-heading ">
+                <h4 class="panel-title">
+                    JavaScript Variables
+                </h4>
+            </div>
+            <div class="panel-collapse">
+                <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </div>
+            </div>
+        </div>
+        <div class="panel">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    JavaScript Output
+                </h4>
+            </div>
+            <div class="panel-collapse">
+                <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let accTitle = document.querySelectorAll(".panel-heading")
+        accTitle.forEach(function(e) {
+            e.addEventListener("click", function() {
+                if (e.classList.contains("active")) {
+                    e.classList.remove("active")
+                } else {
+                    const accTitleIsOpen = document.querySelectorAll(".active")
+                    accTitleIsOpen.forEach(function(accordionTitleWithIsOpen) {
+                        accordionTitleWithIsOpen.classList.remove("active")
+                    })
+                    e.classList.add("active")
+                }
+            })
+        })
+    </script>
+
+</body>
+
+</html>
